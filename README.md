@@ -20,9 +20,10 @@ Training set used was a dataset of 5000 20x20 pixel grayscale images of hand-wri
 - Train multiple logistic regression classifiers using <code>lrCostFunction</code> and <code>fmincg</code> to find optimal values of Theta that minimise cost/error of classification predictions.
 - Return all the classifiers in a matrix <code>all_theta</code>, where the i-th row corresponds to the classifier for label i (number labels 0-9)<br>
 
-3) <em><strong>predictOneVsAll.m</em></strong>- Predict using a one-vs-all multi-class classifier<br>
+3) <strong>[predictOneVsAll.m](https://github.com/fvarnals/Multi-class-Classification-and-Neural-Networks/blob/master/predictOneVsAll.m) - Predict using a one-vs-all multi-class classifier</strong><br>
 <code>function p = predictOneVsAll(all_theta, X)</code>
-<em> Return a vector <code>p</code> of predictions for each example in the matrix X. Values of <code>p</code> vary from 1:K where p = the identified label.</em><br>
+- Use trained Theta values <code>all_theta</code> and Matrix<code>X</code> in combination with <code>sigmoid</code> function to return a vector <code>p</code> of predictions for each example. 
+- Values of <code>p</code> vary from 1:K where p = the identified label.</em><br>
   
 4) <em><strong>predict.m</em></strong>- Neural network prediction function<br>
 <code>function p = predict(Theta1, Theta2, X)</code>
