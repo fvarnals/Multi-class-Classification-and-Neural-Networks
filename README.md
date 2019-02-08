@@ -9,9 +9,9 @@ Training set used was a dataset of 5000 20x20 pixel grayscale images of hand-wri
 <strong>Steps to train the Classifier for recognition of digit images:</strong><br>
 
 1) [lrCostFunction.m](https://github.com/fvarnals/Multi-class-Classification-and-Neural-Networks/blob/master/lrCostFunction.m) -  Logistic regression cost function<br>
+<code>function [J, grad] = lrCostFunction(theta, X, y, lambda)</code> 
 - Compute the cost (error) of classifications, using theta as the parameter for regularized logistic regression.<br>
 - Use the cost to compute the gradient of the cost w.r.t. to the parameters, ensuring that implementation is vectorized.<br>
-<code>function [J, grad] = lrCostFunction(theta, X, y, lambda)</code> 
 
 2) <em><strong>oneVsAll.m</em></strong>- Train a one-vs-all multi-class classifier<br>
 <code>function [all_theta] = oneVsAll(X, y, num_labels, lambda)</code>
