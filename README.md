@@ -15,5 +15,6 @@ Steps:
 <code>function p = predictOneVsAll(all_theta, X)</code>
 <em> Return a vector <code>p</code> of predictions for each example in the matrix X. Values of <code>p</code> vary from 1:K where p = the identified label.</em><br>
   
-<em><strong>predict.m</em></strong>- Neural network prediction function<br>
-
+4) <em><strong>predict.m</em></strong>- Neural network prediction function<br>
+<code>function p = predict(Theta1, Theta2, X)</code>
+<em>Predict the label of an input given a trained neural network; outputs the predicted label of X given the trained weights of a neural network (Theta1, Theta2)</em>
