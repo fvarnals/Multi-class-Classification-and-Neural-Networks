@@ -4,9 +4,9 @@
 
 Training set used was a dataset of 5000 20x20 pixel grayscale images of hand-written digits (source: MNIST).<br>
 
-[ex3data1.mat](https://github.com/fvarnals/Multi-class-Classification-and-Neural-Networks/blob/master/ex3data1.mat) contains a 5000x400 Matrix <code>X</code>, where each row is a 400 dimensional vector representing a training example, created by 'unrolling' the 20x20 grid of pixels for each handwritten digit image.
+[ex3data1.mat](https://github.com/fvarnals/Multi-class-Classification-and-Neural-Networks/blob/master/ex3data1.mat) contains a 5000x400 Matrix <code>X</code>, where each row is a 400 dimensional vector representing a training example, created by 'unrolling' the 20x20 grid of pixels for each digit image.
 
-Steps:<br>
+Steps to train the Classifier for recognition of digit images:<br>
 1) [lrCostFunction.m](https://github.com/fvarnals/Multi-class-Classification-and-Neural-Networks/blob/master/lrCostFunction.m) -  Logistic regression cost function<br>
 <em>Compute the cost (error) of using theta as the parameter for regularized logistic regression.<br> 
 Use the cost to compute the gradient of the cost w.r.t. to the parameters, ensuring that implementation is vectorized.</em><br>
