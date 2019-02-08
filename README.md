@@ -5,7 +5,7 @@
 Training set used was a dataset of 5000 20x20 pixel grayscale images of hand-written digits (source: MNIST).<br>
 
 [ex3data1.mat](https://github.com/fvarnals/Multi-class-Classification-and-Neural-Networks/blob/master/ex3data1.mat) contains:<br>
-<code>X</code> - 5000x400 Matrix , where each row is a 400 dimensional vector representing a training example, created by 'unrolling' the 20x20 grid of pixels for each digit image.<br>
+<code>X</code> - 5000x400 Matrix , where each row is a 400 dimensional vector representing a single training example, created by 'unrolling' the 20x20 grid of pixels for each digit image.<br>
 <code>y</code> - 5000 dimensional vector that contains labels for the training set.
 
 <strong>Steps to train the classifier and implement recognition of digit images:</strong><br>
@@ -15,7 +15,7 @@ Training set used was a dataset of 5000 20x20 pixel grayscale images of hand-wri
 - Compute the cost (error) of classifications, using theta as the parameter for regularized logistic regression.<br>
 - Use the cost to compute the gradient of the cost w.r.t. to the parameters, ensuring that implementation is vectorized.<br>
 
-2) <em><strong>oneVsAll.m</em></strong>- Train a one-vs-all multi-class classifier<br>
+2) [oneVsAll.m](https://github.com/fvarnals/Multi-class-Classification-and-Neural-Networks/blob/master/oneVsAll.m) - Train a one-vs-all multi-class classifier<br>
 <code>function [all_theta] = oneVsAll(X, y, num_labels, lambda)</code>
 <em>Train multiple logistic regression classifiers using <code>lrCostFunction</code> and <code>fmincg</code>; return all the classifiers in a matrix all_theta, where the i-th row corresponds to the classifier for label i (number labels 0-9)</em><br>
 
