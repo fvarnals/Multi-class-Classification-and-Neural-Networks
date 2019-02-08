@@ -25,16 +25,7 @@ Training set used was a dataset of 5000 20x20 pixel grayscale images of hand-wri
 - Use trained Theta values <code>all_theta</code> and matrix <code>X</code> in combination with the <code>sigmoid</code> function to return a 5000x10 <code>output</code> matrix, where each row represents a sample digit from the test set (1:m), and each column represents a number label from 1:K (here 1:10).
 - The values in each row of the <code>output</code> matrix represent the probability of that sample digit belonging to each number label.
 - Therefore, for each row, we find the column with the highest value in order to give our predicted number label <code>p</code>, using: <code>[v p] = max(output, [], 2)</code>. Since Octave is not 0 indexed, column 10 represents '9'.
-hr { 
-    display: block;
-    margin-before: 0.5em;
-    margin-after: 0.5em;
-    margin-start: auto;
-    margin-end: auto;
-    overflow: hidden;
-    border-style: inset;
-    border-width: 1px;
-}
+
 4) <strong>[predict.m](https://github.com/fvarnals/Multi-class-Classification-and-Neural-Networks/blob/master/predict.m)- Neural network prediction function</strong><br>
 <code>function p = predict(Theta1, Theta2, X)</code>
 - Predict the label of each input given a trained neural network, comprising of an <strong>input layer</strong>, one <strong>hidden layer</strong>, and an <strong>output layer</strong>, with the <code>sigmoid</code> activation function applied to the outputs of each layer.
