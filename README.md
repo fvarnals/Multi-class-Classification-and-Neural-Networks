@@ -16,7 +16,7 @@ h = sigmoid(X*theta);
 
 J_unreg = (1/m) * (-y'*log(h) - (1-y)'*log(1-h));
 theta(1) = 0; %don't include bias term in regularisation
-J = J_unreg  + ((lambda/(2*m))*(theta'*theta)); %computes cost using theta as the parameter for regularised logistic regression 
+J = J_unreg  + ((lambda/(2*m))*(theta'*theta)); %compute cost with theta as parameter for regularised logistic regression 
 
 grad = (1/m) * ((h-y)'*X); 
 grad = grad + ((lambda/m).*theta'); %compute the gradient of the cost w.r.t. to the parameters.
