@@ -29,4 +29,4 @@ Training set used was a dataset of 5000 20x20 pixel grayscale images of hand-wri
 4) <strong>[predict.m](https://github.com/fvarnals/Multi-class-Classification-and-Neural-Networks/blob/master/predict.m)- Neural network prediction function</strong><br>
 <code>function p = predict(Theta1, Theta2, X)</code>
 - Predict the label of each input given a trained neural network, comprising of an <strong>input layer</strong>, one <strong>hidden layer</strong>, and an <strong>output layer</strong>, with the <code>sigmoid</code> activation function applied to the outputs of each layer.
-- The maximum <strong>column</strong> value of the <code>output</code> layer outputs gives the predicted number label: <code>[v p] = max(output_outputs, [], 2)</code>
+- The maximum <strong>column</strong> value of the <code>output</code> layer outputs gives the predicted number label:<br> <code>[v p] = max(output_outputs, [], 2)</code>
