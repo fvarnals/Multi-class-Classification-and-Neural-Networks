@@ -7,9 +7,9 @@ Training set used was a dataset of 5000 20x20 pixel grayscale images of hand-wri
 [ex3data1.mat](https://github.com/fvarnals/Multi-class-Classification-and-Neural-Networks/blob/master/ex3data1.mat) contains a 5000x400 Matrix <code>X</code>, where each row is a 400 dimensional vector representing a training example, created by 'unrolling' the 20x20 grid of pixels for each digit image.
 
 Steps to train the Classifier for recognition of digit images:<br>
-1) [lrCostFunction.m](https://github.com/fvarnals/Multi-class-Classification-and-Neural-Networks/blob/master/lrCostFunction.m) -  Logistic regression cost function<br>
+[lrCostFunction.m](https://github.com/fvarnals/Multi-class-Classification-and-Neural-Networks/blob/master/lrCostFunction.m) -  Logistic regression cost function<br>
 <li>Compute the cost (error) of classifications, using theta as the parameter for regularized logistic regression.</li>
-- Use the cost to compute the gradient of the cost w.r.t. to the parameters, ensuring that implementation is vectorized.</em><br>
+<li>Use the cost to compute the gradient of the cost w.r.t. to the parameters, ensuring that implementation is vectorized.</li><br>
 <code>function [J, grad] = lrCostFunction(theta, X, y, lambda)</code> 
 
 2) <em><strong>oneVsAll.m</em></strong>- Train a one-vs-all multi-class classifier<br>
