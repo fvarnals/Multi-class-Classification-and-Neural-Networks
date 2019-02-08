@@ -4,8 +4,8 @@
 
 Training set used was a dataset of 5000 20x20 pixel grayscale images of hand-written digits (source: MNIST).<br>
 
-[ex3data1.mat](https://github.com/fvarnals/Multi-class-Classification-and-Neural-Networks/blob/master/ex3data1.mat) contains:
-<code>X</code> - 5000x400 Matrix , where each row is a 400 dimensional vector representing a training example, created by 'unrolling' the 20x20 grid of pixels for each digit image.
+[ex3data1.mat](https://github.com/fvarnals/Multi-class-Classification-and-Neural-Networks/blob/master/ex3data1.mat) contains:<br>
+<code>X</code> - 5000x400 Matrix , where each row is a 400 dimensional vector representing a training example, created by 'unrolling' the 20x20 grid of pixels for each digit image.<br>
 <code>y</code> - 5000 dimensional vector that contains labels for the training set.
 
 <strong>Steps to train the Classifier for recognition of digit images:</strong><br>
