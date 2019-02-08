@@ -2,7 +2,7 @@
 
 #### <em>Recognise hand-written digits using one-vs-all logistic regression and neural networks.
 
-Training set used was a dataset of 5000 training examples where each training example is a 20 pixel by 20 pixel grayscale image of a hand-written digit (source: MNIST).<br>
+Training set used was a dataset of 5000 20x20 pixel grayscale images of hand-written digits (source: MNIST).<br>
 
 [ex3data1.mat](https://github.com/fvarnals/Multi-class-Classification-and-Neural-Networks/blob/master/ex3data1.mat) contains a 5000x400 Matrix <code>X</code>, where each row is a 400 dimensional vector representing a training example, created by 'unrolling' the 20x20 grid of pixels for each handwritten digit image.
 
