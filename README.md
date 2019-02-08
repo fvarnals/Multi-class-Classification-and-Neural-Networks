@@ -8,7 +8,7 @@ Training set used was a dataset of 5000 20x20 pixel grayscale images of hand-wri
 <code>X</code> - 5000x400 Matrix , where each row is a 400 dimensional vector representing a training example, created by 'unrolling' the 20x20 grid of pixels for each digit image.<br>
 <code>y</code> - 5000 dimensional vector that contains labels for the training set.
 
-<strong>Steps to train the Classifier for recognition of digit images:</strong><br>
+<strong>Steps to train the classifier and implement recognition of digit images:</strong><br>
 
 1) [lrCostFunction.m](https://github.com/fvarnals/Multi-class-Classification-and-Neural-Networks/blob/master/lrCostFunction.m) -  Logistic regression cost function<br>
 <code>function [J, grad] = lrCostFunction(theta, X, y, lambda)</code> 
