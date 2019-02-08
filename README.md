@@ -32,5 +32,5 @@ Training set used was a dataset of 5000 20x20 pixel grayscale images of hand-wri
 - We use a vectorised implementation to increase processing speed.
 - Input layer values are the <strong>rows</strong> of <code>X</code>
 - The <code>hidden_layer_inputs</code> are calculated as the dot product of <code>X</code> and <code>Theta1<code>.
-  - We then apply the <code>sigmoid</code> activation function to the <code>hidden_layer_inputs</code> to calculate the <code>hidden_layer_outputs</code>.
+- We then apply the <code>sigmoid</code> activation function to the <code>hidden_layer_inputs</code> to calculate the <code>hidden_layer_outputs</code>.
 - The maximum <strong>column</strong> value of the <code>output</code> layer outputs gives the predicted number label:<br> <code>[v p] = max(output_outputs, [], 2)</code>
