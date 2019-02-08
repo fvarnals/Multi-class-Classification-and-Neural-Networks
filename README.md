@@ -30,7 +30,8 @@ Training set used was a dataset of 5000 20x20 pixel grayscale images of hand-wri
 <code>function p = predict(Theta1, Theta2, X)</code>
 - Predict the label of each input given a trained neural network, comprising of an <strong>input layer</strong>, one <strong>hidden layer</strong>, and an <strong>output layer</strong>, with the <code>sigmoid</code> activation function applied to the outputs of each layer.
 - We use a vectorised implementation to increase processing speed.
-- Input layer values are the <strong>rows</strong> of <code>X</code>
+- Input layer values are the <strong>rows</strong> of matrix <code>X</code>, with a <strong>column</strong> of 1's added as the first column to account for the bias term.
 - The <code>hidden_layer_inputs</code> are calculated as the dot product of <code>X</code> and <code>Theta1</code>.
 - We then apply the <code>sigmoid</code> activation function to the <code>hidden_layer_inputs</code> to calculate the <code>hidden_layer_outputs</code>.
+- The 
 - The maximum <strong>column</strong> value of the <code>output</code> layer outputs gives the predicted number label:<br> <code>[v p] = max(output_outputs, [], 2)</code>
