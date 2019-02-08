@@ -17,7 +17,8 @@ Training set used was a dataset of 5000 20x20 pixel grayscale images of hand-wri
 
 2) [oneVsAll.m](https://github.com/fvarnals/Multi-class-Classification-and-Neural-Networks/blob/master/oneVsAll.m) - Train a one-vs-all multi-class classifier<br>
 <code>function [all_theta] = oneVsAll(X, y, num_labels, lambda)</code>
-<em>Train multiple logistic regression classifiers using <code>lrCostFunction</code> and <code>fmincg</code>; return all the classifiers in a matrix all_theta, where the i-th row corresponds to the classifier for label i (number labels 0-9)</em><br>
+- Train multiple logistic regression classifiers using <code>lrCostFunction</code> and <code>fmincg</code> 
+- Return all the classifiers in a matrix all_theta, where the i-th row corresponds to the classifier for label i (number labels 0-9)<br>
 
 3) <em><strong>predictOneVsAll.m</em></strong>- Predict using a one-vs-all multi-class classifier<br>
 <code>function p = predictOneVsAll(all_theta, X)</code>
