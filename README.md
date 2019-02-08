@@ -22,8 +22,9 @@ Training set used was a dataset of 5000 20x20 pixel grayscale images of hand-wri
 
 3) <strong>[predictOneVsAll.m](https://github.com/fvarnals/Multi-class-Classification-and-Neural-Networks/blob/master/predictOneVsAll.m) - Predict using a one-vs-all multi-class classifier</strong><br>
 <code>function p = predictOneVsAll(all_theta, X)</code>
-- Use trained Theta values <code>all_theta</code> and Matrix<code>X</code> in combination with <code>sigmoid</code> function to return a vector <code>p</code> of predictions for each example. 
-- Values of <code>p</code> vary from 1:K where p = the identified label.</em><br>
+- Use trained Theta values <code>all_theta</code> and matrix <code>X</code> in combination with the <code>sigmoid</code> function to return a 5000x10 <code>output</code> matrix, where each row represents a sample digit from the test set (1:m), and each column represents a number label from 1:K (here 1:10).
+- The values in each row of the <code>output</code> matrix represent the probability of that sample digit belonging to each number label.
+- Therefore, for each row, we find the column with the highest value, in order to give our predicted number label <code>p</code>, using: <code>[v p] = max(output, [], 2)</code>. Since Octave is not 0 indexed, column 10 represents '9'.
   
 4) <em><strong>predict.m</em></strong>- Neural network prediction function<br>
 <code>function p = predict(Theta1, Theta2, X)</code>
