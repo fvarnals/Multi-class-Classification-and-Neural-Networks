@@ -5,7 +5,8 @@
 Steps:
 1) <em>Compute the Cost Function and gradient for logistic regression with regularisation:</em>
 
-<code> function [J, grad] = lrCostFunction(theta, X, y, lambda)
+<code> 
+function [J, grad] = lrCostFunction(theta, X, y, lambda)
 m = length(y); % number of training examples
 
 % Initialise cost (J) and gradient (grad)
@@ -21,7 +22,8 @@ J = J_unreg  + ((lambda/(2*m))*(theta'*theta)); %compute cost with theta as para
 grad = (1/m) * ((h-y)'*X); 
 grad = grad + ((lambda/m).*theta'); %compute the gradient of the cost w.r.t. to the parameters.
 grad = grad(:);
-end</code>
+end
+</code>
 
 <strong>Files that I had to write code to:</strong><br>
 <em><strong>lrCostFunction.m</em></strong>- Logistic regression cost function<br>
